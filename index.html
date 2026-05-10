@@ -259,6 +259,29 @@
     }
     .ko-facts strong{color:#fff;font-weight:700;letter-spacing:.02em}
 
+    /* WEEKEND AT A GLANCE */
+    .glance{
+      margin-top:22px;background:#fff;border:1px solid rgba(115,0,10,.12);border-radius:18px;
+      padding:22px 22px 18px;box-shadow:0 4px 18px rgba(115,0,10,.04);
+    }
+    .glance-head{
+      font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+      color:var(--garnet);font-weight:700;margin-bottom:14px;
+    }
+    .glance-grid{display:grid;grid-template-columns:1fr;gap:0}
+    .gl-row{
+      display:grid;grid-template-columns:84px 1fr auto;gap:14px;align-items:baseline;
+      padding:10px 0;border-bottom:1px dashed rgba(115,0,10,.12);
+    }
+    .gl-row:last-child{border-bottom:none}
+    .gl-day{font-family:'Fraunces',serif;font-weight:700;font-size:14px;color:var(--garnet);letter-spacing:.04em}
+    .gl-day .num{font-size:22px;display:block;line-height:1}
+    .gl-body{font-size:15px;color:#2a1a1c;line-height:1.4}
+    .gl-body strong{color:var(--ink);font-weight:700}
+    .gl-time{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--garnet);font-weight:600;white-space:nowrap}
+    .gl-row.locked .gl-day{color:var(--garnet)}
+    .gl-row.open .gl-body{color:#7a5a5c;font-style:italic}
+
     /* DETAILS rail under each idea card */
     .details{
       margin-top:14px;padding-top:12px;border-top:1px dashed rgba(115,0,10,.20);
@@ -322,6 +345,7 @@
       <div class="ko-foot">
         <span class="chip">Table for 7</span>
         <span>700 S Grand Ave · DTLA · Italian + patisserie</span>
+        <span class="chip" style="margin-left:auto">All in LA</span>
       </div>
       <ul class="ko-facts">
         <li><strong>The seven:</strong> you, me, + 5 of your inner-circle picks (text me your shortlist; I'll handle the invites).</li>
@@ -330,6 +354,32 @@
         <li><strong>Macarons:</strong> guaranteed. I'll pre-order a tower with a #4 candle on top.</li>
         <li><strong>After:</strong> we walk out at ~9:30. Pick a flight below — Sunset Strip · DTLA queer crawl · home for cake. Your call, your night.</li>
       </ul>
+    </div>
+
+    <div class="glance">
+      <div class="glance-head">Weekend at a glance · all LA</div>
+      <div class="glance-grid">
+        <div class="gl-row locked">
+          <div class="gl-day">Thu<span class="num">21</span></div>
+          <div class="gl-body"><strong>Carolina cocktail hour</strong> @ my place → <strong>Bottega Louie, table for 7</strong> (locked)</div>
+          <div class="gl-time">5:30 + 7 PM</div>
+        </div>
+        <div class="gl-row open">
+          <div class="gl-day">Fri<span class="num">22</span></div>
+          <div class="gl-body">Open day. Fold in any of the green/garden ideas, a quiet recovery, or a small dinner — your call.</div>
+          <div class="gl-time">your call</div>
+        </div>
+        <div class="gl-row">
+          <div class="gl-day">Sat<span class="num">23</span></div>
+          <div class="gl-body"><strong>Cocky-meets-Crescent-Heights BBQ dinner</strong> @ my place — the Carolina showpiece</div>
+          <div class="gl-time">7:30 PM</div>
+        </div>
+        <div class="gl-row">
+          <div class="gl-day">Sun<span class="num">24</span></div>
+          <div class="gl-body"><strong>Drag brunch + crown</strong> @ Hamburger Mary's WeHo</div>
+          <div class="gl-time">11 AM</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -392,22 +442,21 @@
     <div class="section-head">
       <div class="eyebrow">Flight Two · 🐔</div>
       <h2 class="h2"><span class="accent">Garnet</span> and black, all the way.</h2>
-      <p class="lede" style="margin-top:14px">803 doesn't leave you. So let's lean in.</p>
+      <p class="lede" style="margin-top:14px">803 doesn't leave you. So let's bring Carolina <em>to</em> the weekend, in LA.</p>
     </div>
 
     <div class="cards">
       <div class="card">
         <div class="num">1</div>
-        <div class="tag">Headline pick <span class="pick">★ The big one</span></div>
-        <h3>Williams-Brice game weekend</h3>
-        <p>Fly home for a Saturday in Columbia this fall. Pick your home game when the schedule drops. Sandstorm pre-kickoff, garnet everywhere, tailgate, the whole thing. Plus-one welcome. I'll book the flights.</p>
+        <div class="tag">Pre-Bottega · Same night</div>
+        <h3>Carolina cocktail hour, Thu 5:30 PM</h3>
+        <p>Before the 7 PM walk-in. The seven (or a smaller pre-dinner subset) gather at my place, the night opens with a peach-bourbon toast in your honor, and we ride to Bottega together at 6:30.</p>
         <div class="details">
-          <div class="row"><span class="k">Where</span><span class="v">Williams-Brice Stadium · 1125 George Rogers Blvd, Columbia, SC</span></div>
-          <div class="row"><span class="k">When</span><span class="v">Pick a Saturday once the 2026 home slate drops (typically Aug–Nov, 7 home dates). I'll keep an eye on it.</span></div>
-          <div class="row"><span class="k">Travel</span><span class="v">LAX → CAE direct on Delta (~5h). Fri arrive · Sat game · Sun fly back.</span></div>
-          <div class="row"><span class="k">Seats</span><span class="v">Lower-bowl, sideline, between the 30s. Two tickets — you + a plus-one.</span></div>
-          <div class="row"><span class="k">Tailgate</span><span class="v">"Cockaboose Railroad" if available, or Gamecock Park lot — I'll source.</span></div>
-          <div class="row"><span class="k">Budget</span><span class="v">All in (flights + hotel + tickets + tailgate) ~$2,400 for two. On me.</span></div>
+          <div class="row"><span class="k">Where</span><span class="v">My WeHo place → Lyft to Bottega Louie at 6:30.</span></div>
+          <div class="row"><span class="k">When</span><span class="v">Thursday May 21 · 5:30–6:30 PM (60 min, then we ride).</span></div>
+          <div class="row"><span class="k">Drinks</span><span class="v">Peach-bourbon smash · Charleston sweet-tea spritz · garnet sangria · zero-proof option.</span></div>
+          <div class="row"><span class="k">Bites</span><span class="v">Pimento cheese on flatbread, deviled eggs, boiled peanuts.</span></div>
+          <div class="row"><span class="k">Vibe</span><span class="v">Garnet florals, "Sandstorm" cued for the door, group photo on the front step before we go.</span></div>
         </div>
       </div>
       <div class="card">
@@ -425,12 +474,12 @@
       </div>
       <div class="card">
         <div class="num">3</div>
-        <div class="tag">In WeHo</div>
+        <div class="tag">Headline pick <span class="pick">★ The Carolina showpiece</span></div>
         <h3>Cocky-meets-Crescent Heights dinner</h3>
         <p>I host. Carolina BBQ pulled pork (mustard-based, properly), peach cobbler, sweet tea on the rocks. The inner circle, garnet napkins, "Sandstorm" cued up at exactly the right moment.</p>
         <div class="details">
           <div class="row"><span class="k">Where</span><span class="v">My place, WeHo. Indoor + patio.</span></div>
-          <div class="row"><span class="k">When</span><span class="v">Saturday following the 21st — May 23 or 30. Your pick.</span></div>
+          <div class="row"><span class="k">When</span><span class="v">Saturday May 23 · 7:30 PM — the Saturday of your birthday weekend.</span></div>
           <div class="row"><span class="k">Menu</span><span class="v">Mustard-based pulled pork (proper SC), collards, mac &amp; cheese, hush puppies, peach cobbler, sweet tea, bourbon bar.</span></div>
           <div class="row"><span class="k">Headcount</span><span class="v">Up to 14. Tell me your guest list.</span></div>
           <div class="row"><span class="k">Soundtrack</span><span class="v">Sandstorm at the right moment + a Carolina-coded playlist (Hootie, Darius, Edwin McCain, Ranky Tanky).</span></div>
@@ -577,15 +626,18 @@
       <p class="lede" style="margin-top:14px">Smaller riffs. Mention any that pull on you and we'll fold them in.</p>
     </div>
     <div class="stretch">
+      <p style="font-size:14px;color:#7a5a5c;margin-bottom:8px;font-style:italic">Some of these are weekend-of riffs (LA only). Some are <strong style="color:var(--garnet);font-style:normal">future-redeem gifts</strong> — voucher in hand, you pick the date.</p>
       <ul>
-        <li>Palm Springs weekend with the boys</li>
         <li>Out &amp; Equal Summit upgrade ticket on me</li>
         <li>Donation in your name to a cause you pick</li>
         <li>Gamecock Club annual membership</li>
         <li>Custom embroidered <em>DICKPICKLES</em> cap (iconic must live on)</li>
         <li>Day trip to Descanso Gardens, just us</li>
+        <li>Day at LA Arboretum + tea at the herb garden</li>
         <li>A handwritten letter from each of the GGP scholars</li>
         <li>"The Rogers Award" inside CYSTEM (long-term — bigger ask)</li>
+        <li><strong style="color:var(--garnet)">Future gift:</strong> Williams-Brice game weekend voucher — flights + tickets + tailgate for two, redeem when the 2026 SC home schedule drops</li>
+        <li><strong style="color:var(--garnet)">Future gift:</strong> Charleston long weekend — your hometown, my treat, any quarter</li>
       </ul>
     </div>
   </div>
