@@ -247,6 +247,34 @@
       display:inline-block;padding:4px 10px;border-radius:999px;
       background:rgba(255,255,255,.10);color:#fff;font-weight:600;font-size:11.5px;letter-spacing:.08em;
     }
+    .ko-facts{
+      list-style:none;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);
+      display:grid;gap:8px;
+    }
+    .ko-facts li{
+      font-size:14px;color:#f4dadc;line-height:1.5;padding-left:18px;position:relative;
+    }
+    .ko-facts li::before{
+      content:"▸";position:absolute;left:0;top:0;color:var(--gold);font-size:12px;
+    }
+    .ko-facts strong{color:#fff;font-weight:700;letter-spacing:.02em}
+
+    /* DETAILS rail under each idea card */
+    .details{
+      margin-top:14px;padding-top:12px;border-top:1px dashed rgba(115,0,10,.20);
+      display:grid;gap:6px;
+    }
+    .details .row{
+      display:flex;gap:10px;font-size:13.5px;color:#3a2a2c;line-height:1.45;align-items:flex-start;
+    }
+    .details .row .k{
+      flex:0 0 80px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+      color:var(--garnet);font-weight:700;padding-top:2px;
+    }
+    .card.green .details .row .k{color:var(--green)}
+    .details .row .v{flex:1}
+    .details a{color:var(--garnet);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+    .card.green .details a{color:var(--green)}
   </style>
 </head>
 <body>
@@ -292,9 +320,16 @@
       <div class="ko-when">Thursday · May 21 · DTLA</div>
       <p class="ko-note">The night starts here. Pink room, the table reserved, the people arriving. Macarons on the way. Everything below builds outward from that 7pm walk-in — pick the riffs that should follow.</p>
       <div class="ko-foot">
-        <span class="chip">Anchor set</span>
-        <span>700 S Grand · DTLA</span>
+        <span class="chip">Table for 7</span>
+        <span>700 S Grand Ave · DTLA · Italian + patisserie</span>
       </div>
+      <ul class="ko-facts">
+        <li><strong>The seven:</strong> you, me, + 5 of your inner-circle picks (text me your shortlist; I'll handle the invites).</li>
+        <li><strong>The room:</strong> the iconic pink-and-marble main floor — Bottega's signature DTLA flagship.</li>
+        <li><strong>Dress:</strong> Smart casual works. If you want a theme (garnet, all-white, "queer prep"), call it and we'll send a memo.</li>
+        <li><strong>Macarons:</strong> guaranteed. I'll pre-order a tower with a #4 candle on top.</li>
+        <li><strong>After:</strong> we walk out at ~9:30. Pick a flight below — Sunset Strip · DTLA queer crawl · home for cake. Your call, your night.</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -314,18 +349,38 @@
         <div class="tag">Headline pick <span class="pick">★ My favorite</span></div>
         <h3>Motherlode reunion night</h3>
         <p>Where we met, ten years on. Take over a corner of the bar, a round on me, the inner circle on hand, the jukebox loaded. The original meet-cute, but louder.</p>
+        <div class="details">
+          <div class="row"><span class="k">Where</span><span class="v">Motherlode · 8944 Santa Monica Blvd, WeHo</span></div>
+          <div class="row"><span class="k">When</span><span class="v">Right after Bottega — ~9:45 PM, dive-bar warm-up, ride into the night from there.</span></div>
+          <div class="row"><span class="k">Vibe</span><span class="v">Old-school WeHo gay dive · Strip-adjacent · easy door.</span></div>
+          <div class="row"><span class="k">Cost</span><span class="v">$0 to walk in. I'm running the tab on the round.</span></div>
+        </div>
       </div>
       <div class="card rainbow">
         <div class="num">2</div>
         <div class="tag">Sunday Funday</div>
         <h3>Drag brunch + crown</h3>
         <p>Hamburger Mary's WeHo, big group, a real birthday crown (non-negotiable), bottomless mimosas, a tip for every queen who calls your name.</p>
+        <div class="details">
+          <div class="row"><span class="k">Where</span><span class="v">Hamburger Mary's WeHo · 8288 Santa Monica Blvd</span></div>
+          <div class="row"><span class="k">When</span><span class="v">Sunday May 24 · 11:00 AM seating (post-birthday recovery brunch).</span></div>
+          <div class="row"><span class="k">Show</span><span class="v">Sunday "Drag Brunch" — multi-queen revue, audience tipping, full menu.</span></div>
+          <div class="row"><span class="k">Group</span><span class="v">Up to 12 fits at the long top table. Tell me a number, I'll book the size.</span></div>
+          <div class="row"><span class="k">Budget</span><span class="v">~$45/head food + drink + tip pool. On me for the table.</span></div>
+        </div>
       </div>
       <div class="card rainbow">
         <div class="num">3</div>
         <div class="tag">In your world</div>
         <h3>GGP × CYSTEM enamel pin run</h3>
         <p>Surprise: a tiny 4-pin first-run set with the team — your name on the dust jacket, you pick first off the sheet. The thing you built, made wearable. Your work, on people's lapels.</p>
+        <div class="details">
+          <div class="row"><span class="k">What</span><span class="v">4 designs, hard enamel, 1.25" each — GGP rainbow flag · CYSTEM logo · Cocky-in-pride · #4.</span></div>
+          <div class="row"><span class="k">Run</span><span class="v">100 sets total. First 7 reserved for the Bottega table.</span></div>
+          <div class="row"><span class="k">Vendor</span><span class="v">Pin Posse or Vivipins (4-week turnaround). I have specs ready.</span></div>
+          <div class="row"><span class="k">Budget</span><span class="v">~$1,400 production, $0 to you. On the GGP gift line if you greenlight.</span></div>
+          <div class="row"><span class="k">Reveal</span><span class="v">First sheet pulled at the Bottega table, you choose first.</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -346,18 +401,40 @@
         <div class="tag">Headline pick <span class="pick">★ The big one</span></div>
         <h3>Williams-Brice game weekend</h3>
         <p>Fly home for a Saturday in Columbia this fall. Pick your home game when the schedule drops. Sandstorm pre-kickoff, garnet everywhere, tailgate, the whole thing. Plus-one welcome. I'll book the flights.</p>
+        <div class="details">
+          <div class="row"><span class="k">Where</span><span class="v">Williams-Brice Stadium · 1125 George Rogers Blvd, Columbia, SC</span></div>
+          <div class="row"><span class="k">When</span><span class="v">Pick a Saturday once the 2026 home slate drops (typically Aug–Nov, 7 home dates). I'll keep an eye on it.</span></div>
+          <div class="row"><span class="k">Travel</span><span class="v">LAX → CAE direct on Delta (~5h). Fri arrive · Sat game · Sun fly back.</span></div>
+          <div class="row"><span class="k">Seats</span><span class="v">Lower-bowl, sideline, between the 30s. Two tickets — you + a plus-one.</span></div>
+          <div class="row"><span class="k">Tailgate</span><span class="v">"Cockaboose Railroad" if available, or Gamecock Park lot — I'll source.</span></div>
+          <div class="row"><span class="k">Budget</span><span class="v">All in (flights + hotel + tickets + tailgate) ~$2,400 for two. On me.</span></div>
+        </div>
       </div>
       <div class="card">
         <div class="num">2</div>
         <div class="tag">Wear it</div>
         <h3>Custom #4 Gamecocks jersey — ROGERS on the back</h3>
         <p>Your name. Your number. Show up at GGP Pride Night in it. The number 4 is <em>our</em> thing — let's put it in cotton.</p>
+        <div class="details">
+          <div class="row"><span class="k">Style</span><span class="v">Nike replica, garnet home or white away — your call.</span></div>
+          <div class="row"><span class="k">Custom</span><span class="v">"ROGERS" across the shoulders · "4" front + back. (Note: NCAA NIL rules apply — we go through fanatics.com or Nike's customizer.)</span></div>
+          <div class="row"><span class="k">Size</span><span class="v">Confirm with me — Nike runs slim, you may want to size up.</span></div>
+          <div class="row"><span class="k">Lead time</span><span class="v">2–3 weeks for customization.</span></div>
+          <div class="row"><span class="k">Budget</span><span class="v">$160–185 all-in.</span></div>
+        </div>
       </div>
       <div class="card">
         <div class="num">3</div>
         <div class="tag">In WeHo</div>
         <h3>Cocky-meets-Crescent Heights dinner</h3>
         <p>I host. Carolina BBQ pulled pork (mustard-based, properly), peach cobbler, sweet tea on the rocks. The inner circle, garnet napkins, "Sandstorm" cued up at exactly the right moment.</p>
+        <div class="details">
+          <div class="row"><span class="k">Where</span><span class="v">My place, WeHo. Indoor + patio.</span></div>
+          <div class="row"><span class="k">When</span><span class="v">Saturday following the 21st — May 23 or 30. Your pick.</span></div>
+          <div class="row"><span class="k">Menu</span><span class="v">Mustard-based pulled pork (proper SC), collards, mac &amp; cheese, hush puppies, peach cobbler, sweet tea, bourbon bar.</span></div>
+          <div class="row"><span class="k">Headcount</span><span class="v">Up to 14. Tell me your guest list.</span></div>
+          <div class="row"><span class="k">Soundtrack</span><span class="v">Sandstorm at the right moment + a Carolina-coded playlist (Hootie, Darius, Edwin McCain, Ranky Tanky).</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -390,18 +467,39 @@
         <div class="tag">Headline pick <span class="pick">★ Two-for-one</span></div>
         <h3>Carolina Jessamine in a garnet planter</h3>
         <p>South Carolina's state flower, on your WeHo doorstep, in a hand-glazed garnet pot. Yellow blooms in spring; bee-friendly; fragrant; resilient. Two homes, one plant. (We can pair it with a peach sapling if you've got the patio for it.)</p>
+        <div class="details">
+          <div class="row"><span class="k">Plant</span><span class="v"><em>Gelsemium sempervirens</em> · SC state flower since 1924 · evergreen vine, yellow trumpet blooms Feb–Apr · fragrant, deer-resistant, drought-tolerant once established.</span></div>
+          <div class="row"><span class="k">Light</span><span class="v">Full to part sun. WeHo balcony = perfect.</span></div>
+          <div class="row"><span class="k">Planter</span><span class="v">Hand-glazed 14" garnet ceramic w/ drainage. Sourced from a queer-owned LA potter (have 2 candidates).</span></div>
+          <div class="row"><span class="k">Caveat</span><span class="v">All parts are toxic if eaten. Fine on a balcony; we'll skip it if there's a curious dog.</span></div>
+          <div class="row"><span class="k">Budget</span><span class="v">~$140 plant + planter + delivery.</span></div>
+        </div>
       </div>
       <div class="card green">
         <div class="num">2</div>
         <div class="tag">A morning together</div>
         <h3>Theodore Payne workshop, you + me</h3>
         <p>Native CA gardens, half-day workshop, then lunch. Leave with seeds, a plan, and dirt under our fingernails. (Also: you teach me. I'm the student here.)</p>
+        <div class="details">
+          <div class="row"><span class="k">Where</span><span class="v">Theodore Payne Foundation · 10459 Tuxford St, Sun Valley · 501(c)(3) native-plants nursery + education.</span></div>
+          <div class="row"><span class="k">When</span><span class="v">A Saturday in June. They run "Native Gardening 101" most months — I'll lock the date once you say go.</span></div>
+          <div class="row"><span class="k">Format</span><span class="v">~3 hours classroom + nursery walk; we leave with seeds + a planting plan for your space.</span></div>
+          <div class="row"><span class="k">Lunch</span><span class="v">Loquat in Burbank or back to my patio. Your call.</span></div>
+          <div class="row"><span class="k">Budget</span><span class="v">~$60/each workshop + $40 plants. On me.</span></div>
+        </div>
       </div>
       <div class="card green">
         <div class="num">3</div>
         <div class="tag">Soft Saturday</div>
         <h3>The Huntington, no agenda</h3>
         <p>Pasadena. The Japanese Garden first. The desert garden if it's not too hot. A long brunch on the way back. Phones off. Just look at things growing.</p>
+        <div class="details">
+          <div class="row"><span class="k">Where</span><span class="v">The Huntington · 1151 Oxford Rd, San Marino · 130 acres of curated gardens.</span></div>
+          <div class="row"><span class="k">Open</span><span class="v">Wed–Mon 10–5 (closed Tues). 30 min from WeHo, traffic-dependent.</span></div>
+          <div class="row"><span class="k">Path</span><span class="v">Japanese Garden → Chinese Garden (Liu Fang Yuan) → Desert Garden if cool, Rose if blooming → late lunch at the Café in the Tea Room.</span></div>
+          <div class="row"><span class="k">Tickets</span><span class="v">$29 weekday, $35 weekend. Pre-book a timed entry — they cap admission.</span></div>
+          <div class="row"><span class="k">Bring</span><span class="v">Hat, water, sunscreen, comfy shoes. Phones off (your rule).</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -422,18 +520,39 @@
         <div class="tag">Headline pick <span class="pick">★ The promise made real</span></div>
         <h3>"Four Corners" check-in — debut</h3>
         <p>Me, you, Eric, Mabel. The quarterly ritual we wrote into the Loving Report — let's make this birthday the kickoff. Drinks at my place. No agenda. Just the four of us, taking the temperature of the work and each other. The number 4, lived.</p>
+        <div class="details">
+          <div class="row"><span class="k">Who</span><span class="v">You · Gordon · Eric Francksen · Mabel Chung. Four corners.</span></div>
+          <div class="row"><span class="k">Where</span><span class="v">My place, WeHo. Patio if weather, living room otherwise.</span></div>
+          <div class="row"><span class="k">When</span><span class="v">First date inside birthday week. Eric is in Madison; he flies for this. Mabel: Zoom OK if NYC schedule blocks.</span></div>
+          <div class="row"><span class="k">Format</span><span class="v">No agenda, no decks. 90 min. One round each: what's heavy, what's beautiful, what we want next quarter.</span></div>
+          <div class="row"><span class="k">Cadence</span><span class="v">Quarterly from here — Q3 in late August, Q4 at GDC '26 prep, Q1 post-GDC, Q2 at your next birthday.</span></div>
+        </div>
       </div>
       <div class="card">
         <div class="num">2</div>
         <div class="tag">Surprise</div>
         <h3>Inner-circle dinner, room reserved</h3>
-        <p>A small private room — Lucques, Jones Hollywood, or your call. The people who matter, the table laid, the toasts loaded. I'll quarterback the guest list quietly with you.</p>
+        <p>A small private room — Jones Hollywood, AOC West Third, or Catch Steak — your call. The people who matter, the table laid, the toasts loaded. I'll quarterback the guest list quietly with you.</p>
+        <div class="details">
+          <div class="row"><span class="k">Candidates</span><span class="v">Jones Hollywood (7205 Santa Monica) · AOC (8700 W 3rd) · Catch Steak (8715 Melrose) · Madeo (8682 Melrose).</span></div>
+          <div class="row"><span class="k">When</span><span class="v">Saturday May 23 OR Friday May 22 — pick one. Private rooms book 3+ wks out, so we lock by May 11.</span></div>
+          <div class="row"><span class="k">Headcount</span><span class="v">12–18, your guest list. I'll send invites.</span></div>
+          <div class="row"><span class="k">Format</span><span class="v">Family-style or chef's tasting. Pre-fix wine pairing optional. Toasts orchestrated, not free-for-all.</span></div>
+          <div class="row"><span class="k">Budget</span><span class="v">$150–225/head depending on venue. On me.</span></div>
+        </div>
       </div>
       <div class="card">
         <div class="num">3</div>
         <div class="tag">A keepsake</div>
         <h3>"This Is Your Life" video book</h3>
         <p>Thirty-second clips from your people, edited into one short film. I make the calls. You watch with coffee on the morning of the 21st. The kind of thing you don't know you needed until it's playing.</p>
+        <div class="details">
+          <div class="row"><span class="k">Cast</span><span class="v">~15–20 people from your orbit: GGP team · WeHo crew · 803 hometown · family · scholar alums.</span></div>
+          <div class="row"><span class="k">Format</span><span class="v">30-second selfie videos, vertical OK. Same prompt for everyone: "What do you love about Alex?"</span></div>
+          <div class="row"><span class="k">Edit</span><span class="v">Cut to ~6–7 min. Soft music bed. Title card with the number 4 to open.</span></div>
+          <div class="row"><span class="k">Delivery</span><span class="v">Private Vimeo link, drops 8 AM Thu May 21 with coffee. Permanent keepsake.</span></div>
+          <div class="row"><span class="k">Need from you</span><span class="v">A name list (or veto power on mine). Otherwise I run silent.</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -478,6 +597,7 @@
     <div class="eyebrow">What sings?</div>
     <h2 class="h2">Tell me which ones <span class="accent">land.</span></h2>
     <p class="lede">Just text me back the numbers — or the ones you want, or none of them and a different idea entirely. I built this so you'd have something to react to, not a script to follow.</p>
+    <p class="lede" style="margin-top:18px">Want <em>more</em> info on any of these? I have venue photos, alt-options, vendor quotes, full menus, sub-lists, and "what about instead..." variations for every single card. Text the number(s) and I'll send the dossier.</p>
     <p class="lede" style="margin-top:18px">Whatever the day looks like, the love behind it is the same.</p>
     <div class="signature">— Gordon <span class="heart">❤</span></div>
     <div class="nudge">(p.s. — happy birthday, friend. CYSTEM is bigger because of you. WeHo is warmer because of you. I'm a better friend because of you.)</div>
