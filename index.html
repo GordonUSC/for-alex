@@ -198,6 +198,55 @@
 
     /* small utility */
     .nudge{font-size:14px;color:#7a5a5c;margin-top:10px;font-style:italic}
+
+    /* KICKOFF CARD */
+    .kickoff{
+      position:relative;margin-top:34px;padding:30px 26px 26px;border-radius:20px;
+      background:linear-gradient(160deg, #1a0a0c 0%, var(--garnet) 100%);
+      color:#fff;overflow:hidden;
+      box-shadow:0 18px 40px rgba(115,0,10,.22);
+    }
+    .kickoff::before{
+      content:"";position:absolute;top:0;left:0;right:0;height:4px;
+      background:linear-gradient(90deg,var(--gold),#fff,var(--gold));opacity:.85;
+    }
+    .kickoff::after{
+      content:"";position:absolute;right:-50px;bottom:-50px;width:180px;height:180px;border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.12), transparent 70%);
+    }
+    .ko-tag{
+      font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+      color:var(--gold);font-weight:700;margin-bottom:14px;
+    }
+    .ko-tag .pulse{
+      display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);
+      margin-right:8px;transform:translateY(-1px);
+      box-shadow:0 0 12px var(--gold);animation:pulse 1.6s ease-in-out infinite;
+    }
+    @keyframes pulse{0%,100%{opacity:.55;transform:scale(.9) translateY(-1px)}50%{opacity:1;transform:scale(1.15) translateY(-1px)}}
+    .ko-time{
+      font-family:'Fraunces',serif;font-weight:900;font-size:clamp(54px,12vw,80px);
+      line-height:.9;letter-spacing:-.04em;color:#fff;
+    }
+    .ko-time .pm{font-size:.45em;font-weight:600;letter-spacing:.05em;color:var(--gold);margin-left:6px}
+    .ko-place{
+      font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,6vw,38px);
+      letter-spacing:-.01em;margin-top:8px;color:#fff;
+    }
+    .ko-when{
+      font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:10px;font-weight:600;
+    }
+    .ko-note{
+      font-size:15.5px;color:#f4e0e2;margin-top:16px;line-height:1.55;max-width:520px;
+    }
+    .ko-foot{
+      display:flex;align-items:center;gap:10px;margin-top:20px;padding-top:18px;
+      border-top:1px dashed rgba(255,255,255,.20);font-size:12.5px;color:#f4dadc;letter-spacing:.05em;
+    }
+    .ko-foot .chip{
+      display:inline-block;padding:4px 10px;border-radius:999px;
+      background:rgba(255,255,255,.10);color:#fff;font-weight:600;font-size:11.5px;letter-spacing:.08em;
+    }
   </style>
 </head>
 <body>
@@ -225,7 +274,7 @@
     <div class="note">
       <p class="lede">Alex —</p>
       <p style="margin-top:14px">You love four things, loud and clear: <strong>gay things</strong>, the <strong>Gamecocks</strong>, <strong>gardening</strong>, and <strong>your friends</strong>. So I built four flights of ideas around exactly that.</p>
-      <p>None of these are decided. This is a menu, not a plan. Read what makes you smile. Tell me which ones to chase. The day is yours.</p>
+      <p>The kickoff is set — Bottega Louie, 7:00pm, May 21. Everything below is a menu, not a plan. Read what makes you smile. Tell me which riffs to chase around the anchor. The day is yours.</p>
       <p class="signoff">— Gordon</p>
     </div>
 
@@ -234,6 +283,18 @@
       <div class="love"><span class="glyph">🐔</span><span class="lbl">Gamecocks</span></div>
       <div class="love"><span class="glyph">🌿</span><span class="lbl">Gardening</span></div>
       <div class="love"><span class="glyph">🫶</span><span class="lbl">Friends</span></div>
+    </div>
+
+    <div class="kickoff">
+      <div class="ko-tag"><span class="pulse"></span>The kickoff · Locked in</div>
+      <div class="ko-time">7:00<span class="pm">PM</span></div>
+      <div class="ko-place">Bottega Louie</div>
+      <div class="ko-when">Thursday · May 21 · DTLA</div>
+      <p class="ko-note">The night starts here. Pink room, the table reserved, the people arriving. Macarons on the way. Everything below builds outward from that 7pm walk-in — pick the riffs that should follow.</p>
+      <div class="ko-foot">
+        <span class="chip">Anchor set</span>
+        <span>700 S Grand · DTLA</span>
+      </div>
     </div>
   </div>
 </section>
